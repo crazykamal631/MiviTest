@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/footer"
+    android:background="@color/bg_login"
+    android:fillViewport="true"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_acc_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="Account Details"
+                    android:textColor="#030303" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/header"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/labelEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separator"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toStartOf="@+id/separator_key_value_acc"
+                    android:padding="10dp"
+                    android:text="@string/labeEmail" />
+
+                <View
+                    android:id="@+id/separator_key_value_acc"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/separator"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separator"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/separator_key_value_acc"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/labeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/labelEmail"
+                    android:layout_below="@+id/labelEmail"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/labeName" />
+
+                <TextView
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelEmail"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/labeName"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/labelDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/labeName"
+                    android:layout_below="@+id/labeName"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/labeDob" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labeName"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/labelDob"
+                    android:padding="10dp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/header_subscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/label_sub_details"
+                    android:textColor="#030303" />
+
+                <View
+                    android:id="@+id/separator1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/header_subscription"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/labelDataBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separator1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toStartOf="@+id/separator_key_value_sub"
+                    android:padding="10dp"
+                    android:text="@string/label_data_balance" />
+
+                <View
+                    android:id="@+id/separator_key_value_sub"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/separator1"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/data_balance_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separator1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/separator_key_value_sub"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/labelExpiryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/labelDataBalance"
+                    android:layout_below="@+id/labelDataBalance"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/labelExpiryDate" />
+
+                <TextView
+                    android:id="@+id/expiryDateValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelDataBalance"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/labelExpiryDate"
+                    android:padding="10dp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_product_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:stateListAnimator="@drawable/button_style_custom"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/header_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/label_product_details"
+                    android:textColor="#030303" />
+
+                <View
+                    android:id="@+id/separator_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/header_product"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/labelProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separator_product"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toStartOf="@+id/separator_key_value"
+                    android:padding="10dp"
+                    android:text="@string/labeProductName" />
+
+                <View
+                    android:id="@+id/separator_key_value"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/header_product"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+
+                    android:id="@+id/productNameValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separator_product"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/separator_key_value"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/labelPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/labelProductName"
+                    android:layout_below="@+id/labelProductName"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/labelPrice" />
+
+                <TextView
+                    android:id="@+id/priceValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelProductName"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/labelPrice"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/labelUnTalk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/labelPrice"
+                    android:layout_below="@+id/labelPrice"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/unTalk" />
+
+                <TextView
+                    android:id="@+id/unTalkValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelPrice"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/labelUnTalk"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/labelUnText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/labelPrice"
+                    android:layout_below="@+id/labelUnTalk"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:text="@string/unTaxt" />
+
+                <TextView
+                    android:id="@+id/unTextValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelUnTalk"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/labelUnText"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

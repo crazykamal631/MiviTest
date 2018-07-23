@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mivi</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Contact Number</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="labeName">NAME</string>
+    <string name="labeDob">DOB</string>
+    <string name="labeEmail">EMAIL</string>
+    <string name="label_sub_details">Subscription Details</string>
+    <string name="label_data_balance">DATA BALANCE</string>
+    <string name="labelExpiryDate">EXPIRY DATE</string>
+    <string name="label_product_details">Product Details</string>
+    <string name="labeProductName">PRODUCT NAME</string>
+    <string name="labelPrice">PRICE</string>
+    <string name="unTalk">UNLIMITED CALL</string>
+    <string name="unTaxt">UNLIMITED TEXT</string>
+    <string name="welcome_msg">Welcome To Mivi</string>
+</resources>
