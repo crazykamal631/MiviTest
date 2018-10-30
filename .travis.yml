@@ -24,6 +24,7 @@ cache:
   components:
     - tools
     - platform-tools
+    - tools
     - build-tools-$ANDROID_BUILD_TOOLS
     - android-$ANDROID_API
     - android-$EMULATOR_API
@@ -36,9 +37,9 @@ cache:
     - sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API
     - sys-img-armeabi-v7a-android-$EMULATOR_API
     licenses:
-    - android-sdk-preview-license-.+
-    - android-sdk-license-.+
-    - google-gdk-license-.+
+    - 'android-sdk-preview-license-52d11cd2'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
 
   before_install:
   #- yes | sdkmanager "platforms;android-27"
