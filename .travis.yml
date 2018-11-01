@@ -37,9 +37,9 @@ cache:
     - sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API
     - sys-img-armeabi-v7a-android-$EMULATOR_API
     licenses:
-    - 'android-sdk-preview-license-52d11cd2'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
+    - android-sdk-preview-license-52d11cd2
+    - android-sdk-license-.+
+    - google-gdk-license-.+
 
   before_install:
   - mkdir "$ANDROID_HOME/licenses" || true
