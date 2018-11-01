@@ -70,11 +70,11 @@ before_deploy:
 
 deploy:
   provider: releases
-  file: TravisExample.apk
+  file: MiviTest.apk
   skip_cleanup: true
 
   on:
-    repo: harmittaa/travis-example-android
+    repo: crazykamal631/MiviTest
     tags: true
     jdk: oraclejdk8
   api_key:
