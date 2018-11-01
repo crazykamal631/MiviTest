@@ -64,7 +64,7 @@ script:
 before_deploy:
 - cp $TRAVIS_BUILD_DIR/test_key.jks $HOME
 - cd app/build/outputs/apk/
-- jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $HOME/test_key.jks -storepass $storepass -keypass $keypass app-release-unsigned.apk ExampleKeystoreAlias
+- jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $HOME/test_key.jks -storepass $storepass -keypass $keypass app-release-unsigned.apk android
 
 # Verification
 - jarsigner -verify app-release-unsigned.apk
